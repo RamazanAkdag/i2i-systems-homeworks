@@ -24,15 +24,20 @@ public class myTimerLoggings {
      
        // Logger logger = LogManager.getLogger();
        // logger.info("selamlar");
-      LocalTime previousTime = LocalTime.now().minusSeconds(1);//çalıştuığı ilk saniyeden başlaması için 1 saniye geri alıyoruz
+      LocalTime previousTime = LocalTime.now().minusSeconds(1);//çalıştığı ilk saniyeden başlaması için 1 saniye geri alıyoruz
       while(true){
           LocalTime currentTime = LocalTime.now();
           
-          if(previousTime.getSecond() != currentTime.getSecond()){
-              logger.debug("saniye değişti");
+          if(previousTime.getSecond() != currentTime.getSecond() ){
+              if(currentTime.getSecond() != 0){
+                  logger.debug("saniye değişti");
+              }
           }
           if(previousTime.getMinute() != currentTime.getMinute()){
-              logger.info("dakika değişti");
+              if(currentTime.getMinute() != 0){
+                 logger.info("dakika değişti"); 
+              }
+              
           }
           if(previousTime.getHour() != currentTime.getHour() ){
               logger.error("saat değişti");

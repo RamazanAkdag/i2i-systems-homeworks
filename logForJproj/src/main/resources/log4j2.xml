@@ -13,7 +13,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this 
           <Policies>
               <SizeBasedTriggeringPolicy size="1 MB"></SizeBasedTriggeringPolicy>
           </Policies>
-          <DefaultRolloverStrategy max="200">
+          <DefaultRolloverStrategy>
               <Delete  basePath="C:\Users\Ramazan Fırat\Desktop\loglar"  maxDepth="1">
                 <IfLastModified age="1d" />
               </Delete>
@@ -33,7 +33,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this 
       <!--<logger name="com" level="info" additivity="false">
           <appender-ref ref="rolling"></appender-ref>
       </logger>-->
-      <Root level="debug">
+      <Root level="debug"><!--debugdan sonnraki kademeleri loglar-->
       <AppenderRef ref="rolling"/> 
     </Root>
     
