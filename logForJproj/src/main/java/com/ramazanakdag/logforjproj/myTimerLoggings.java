@@ -27,24 +27,22 @@ public class myTimerLoggings {
       LocalTime previousTime = LocalTime.now().minusSeconds(1);//çalıştığı ilk saniyeden başlaması için 1 saniye geri alıyoruz
       while(true){
           LocalTime currentTime = LocalTime.now();
-          
-          if(previousTime.getSecond() != currentTime.getSecond() ){
+          if(previousTime.getSecond() != currentTime.getSecond() ){//şu anki zamanın saniyei öncekinden farklıysa
               if(currentTime.getSecond() != 0){
                   logger.debug("saniye değişti");
               }
           }
-          if(previousTime.getMinute() != currentTime.getMinute()){
+          if(previousTime.getMinute() != currentTime.getMinute()){//şu anki zamanın dakikası öncekinden farklıysa
               if(currentTime.getMinute() != 0){
                  logger.info("dakika değişti"); 
-              }
-              
+              }  
           }
-          if(previousTime.getHour() != currentTime.getHour() ){
+          if(previousTime.getHour() != currentTime.getHour() ){//şu anki zamanın saati öncekinden farklıysa
               logger.error("saat değişti");
           }
           
           try {
-              Thread.sleep(1000);
+              Thread.sleep(1000);//1 saniye bekle
           } catch (InterruptedException ex) {
               java.util.logging.Logger.getLogger(myTimerLoggings.class.getName()).log(Level.SEVERE, null, ex);
           }
