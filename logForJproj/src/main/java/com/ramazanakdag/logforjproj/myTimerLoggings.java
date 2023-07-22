@@ -6,9 +6,10 @@ package com.ramazanakdag.logforjproj;
 
 import java.time.LocalTime;
 import java.util.logging.Level;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+/*import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;*/
 
+import org.apache.logging.log4j.*;
 /**
  *
  * @author RamazanFirat
