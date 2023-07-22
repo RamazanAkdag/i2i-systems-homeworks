@@ -34,21 +34,13 @@ public Receive createReceive() {
 }
   
     public static void main(String[] args) {
-       //Configuring remote access and port
+   
         Config config = ConfigFactory.load("application.conf");
 
-        // Create the actor system
         ActorSystem system = ActorSystem.create("SenderSystem", config);
-        
-        
-
-        // Create the sender actor
         ActorRef sender = system.actorOf(AkkaSender.props(), "sender");
-        
-       
-
-        // Send a message from the sender actor to the receiver actor in akkaDemo2
-        sender.tell("Hi from sender", ActorRef.noSender());
+      
+        sender.tell("Hi from sender", ActorRef.noSender());//send message to itself
 
 
         
