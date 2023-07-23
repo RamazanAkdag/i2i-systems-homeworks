@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.ramazanakdag</groupId>
+    <artifactId>VoltDbHw</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>20</maven.compiler.source>
+        <maven.compiler.target>20</maven.compiler.target>
+        <exec.mainClass>com.ramazanakdag.voltdbhw.VoltDbHw</exec.mainClass>
+    </properties>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.voltdb/voltdbclient -->
+<dependency>
+    <groupId>org.voltdb</groupId>
+    <artifactId>voltdbclient</artifactId>
+    <version>12.1.0</version>
+    <scope>compile</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.openjdk.jol/jol-core -->
+<dependency>
+    <groupId>org.openjdk.jol</groupId>
+    <artifactId>jol-core</artifactId>
+    <version>0.17</version>
+    <scope>compile</scope>
+</dependency>
+
+
+    </dependencies>
+</project>
