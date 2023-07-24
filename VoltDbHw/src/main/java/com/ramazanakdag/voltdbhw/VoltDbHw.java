@@ -11,14 +11,13 @@ public class VoltDbHw {
  
         String driver = "org.voltdb.jdbc.Driver";
         String url = "jdbc:voltdb://172.18.0.2:21212";
-        /*String userName = "ramo";
-        String password = "12345";*/
+       
         //String sql = "SELECT dialect FROM helloworld";
         String sql = "SELECT * FROM SUBSCRIBER";
         try {
                 // Load driver. Create connection.
             Class.forName(driver);
-            Connection conn = DriverManager.getConnection(url/*,userName,password*/);
+            Connection conn = DriverManager.getConnection(url);
             
                 // create a statement
             Statement query = conn.createStatement();
