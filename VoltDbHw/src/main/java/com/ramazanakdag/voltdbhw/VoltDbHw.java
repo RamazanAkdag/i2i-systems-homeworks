@@ -10,7 +10,7 @@ public class VoltDbHw {
     public static void main(String[] args) {
  
         String driver = "org.voltdb.jdbc.Driver";
-        String url = "jdbc:voltdb://172.18.0.2:21212";
+        String url = "jdbc:voltdb://localhost:32768";
        
         //String sql = "SELECT dialect FROM helloworld";
         String sql = "SELECT * FROM SUBSCRIBER";
