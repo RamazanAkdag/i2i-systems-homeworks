@@ -35,7 +35,7 @@ public class VoltDbHw {
                         ", TARIFF_ID: " + tariffId + ", START_DATE: " + startDate);
             }
             
-                 
+
             resultSet.close();
             query.close();
             conn.close();
