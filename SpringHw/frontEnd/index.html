@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kayıt Formu</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-top: 10px;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 5px;
+      }
+
+      input[type="submit"] {
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kayıt Formu</h1>
+      <form class="inputForm">
+        <label for="subscName">Ad:</label>
+        <input type="text" id="subscName" name="subscName" required />
+
+        <label for="subscSurname">Soyad:</label>
+        <input type="text" id="subscSurname" name="subscSurname" required />
+
+        <label for="msisdn">MSISDN:</label>
+        <input type="text" id="msisdn" name="msisdn" required />
+
+        <label for="tariffId">Tariff ID:</label>
+        <input type="text" id="tariffId" name="tariffId" required />
+
+        <label for="startDate">Başlangıç Tarihi:</label>
+        <input type="text" id="startDate" name="startDate" required />
+
+        <input type="submit" value="Kayıt Ol" />
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
