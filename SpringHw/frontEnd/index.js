@@ -34,6 +34,12 @@ async function addToServer(e) {
     if (response.ok) {
       console.log("Kayıt başarılı!");
       alert("Kayıt başarılı!");
+      nameInput.value = "";
+      surnameInput.value = "";
+      msisdnInput.value = "";
+      tariffIdInput.value = "";
+      startDateInput.value = "";
+
       form.reset();
     } else {
       alert("Kayıt başarısız!");
